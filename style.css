@@ -4,43 +4,138 @@
     box-sizing: border-box;
 }
 
-header{
+
+
+
+
+/*
+*/
+
+.center{
     display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
     flex-wrap: wrap;
-    background-color: aqua;
+}
+
+section {
     text-align: center;
 }
 
-.w50{
-    width: 50%;
-    padding: 0 10px;
+section.Calculadora{
+    padding: 7% 2%;
+    
+    background-color: rgb(30, 30, 30);
 }
 
-
-section.banner{
-    width: 100%;
-    min-height: 585px;
-    background-color: black;
-    text-align: center;
-    padding: 90px 0;
+section.Calculadora h1{
+   text-align: center;
+    font-size: 50px;
     color: white;
 }
 
+section.Calculadora h2{
+    text-align: center;
+    color: white;
+    padding: 35px 2%;
+}
 
+section.Calculadora form{
+    width: 100%;
+}
 
+.Calculadora input[type=banca],
+.Calculadora input[type=taxa],
+.Calculadora input[type=entrada]{
+    
+    width: 50%;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: #FCFDFF ;
+    border: 1px solid #C3CCE8;
+    font-size: 18px;
+    padding-left: 10px;
 
-.w33{
-    width: 33.3%;
-    padding: 0 10px;
+}
+
+.Calculadora textarea{
+   
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: #FCFDFF ;
+    border: 1px solid #C3CCE8;
+    padding: 10px;
+    font-size: 18px;
+    resize: vertical;
+    
+}
+/*
+.Calculadora input[type=win]{
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    background: #35d443;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.Calculadora input[type=loss]{
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    background: #ff2c25;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+*/
+
+.items a.win{
+    background-color: #35d443;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.items a.loss{
+    
+    background-color: #ff2c25;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+div.resultados{
+   
 }
 
 footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: red;
+    text-align:center;
+    font-size: 18px;
+    padding: 5px;
+    
+    background-color: #35d443;
 }
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
 
 @media screen and (max-with: 768px) {
     header{
