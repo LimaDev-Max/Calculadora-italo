@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <script src="c.js"></script>
 </head>
 <body>
     
@@ -16,7 +17,7 @@
         <h1>Calculadora Ceifadora</h1>
         <div style="max-width: 900px;" class="center">
             <form method="post">
-                <input type="Banca" placeholder="Banca Inicial...">
+                <input id="bancaInicial" type="Banca" placeholder="Banca Inicial...">
                 <input type="taxa" placeholder="Taxa...">
                 <input type="entrada" placeholder="Proxima Entrada...">
                
@@ -25,8 +26,8 @@
                     <input type="loss" name="acao" value="LOSS!">
                 -->
                 <div class="items">
-                    <a class="win" href="#">Certo!</a>
-                    <a class="loss" href="">Errado!</a>
+                    <button class="win"> Certo!</button>
+                    <button class="loss"> Errado!</button>
                 </div> <!--items--> 
                
             </form> <!--post-->

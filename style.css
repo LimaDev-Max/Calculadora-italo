@@ -99,7 +99,8 @@ section.Calculadora form{
 
 */
 
-.items a.win{
+.items button.win{
+    cursor: pointer;
     background-color: #35d443;
     color: white;
     padding: 15px;
@@ -108,7 +109,7 @@ section.Calculadora form{
     font-size: 18px;
 }
 
-.items a.loss{
+.items button.loss{
     
     background-color: #ff2c25;
     color: white;
