@@ -6,32 +6,33 @@
 
 .center{
     display: flex;
-    max-width: 1100px;
+    max-width: 1278px;
     padding: 0 2%;
     margin: 0 auto;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 section {
-    text-align: center;
+ background-image: url(img/Vermelho\ e\ Preto\ Escuro\ Gamer\ Esportes\ Arte\ para\ canal\ do\ YouTube.png);
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 section.Calculadora{
     padding: 7% 2%;
     
-background-color: rgb(30,30,30);
+
 }
 
-section.Calculadora h1{
-   text-align: center;
-    font-size: 50px;
-    color: white;
+section h1{
+    color: transparent;
 }
 
 section.Calculadora h2{
     text-align: center;
     color: white;
-    padding: 15px;
+    padding: 2%;
 }
 
 section.Calculadora form{
@@ -61,7 +62,10 @@ select{
     border: 1px solid #C3CCE8;
     font-size: 18px;
     padding-left: 10px;
+    
 }
+
+
 
 .Calculadora textarea{
    
@@ -75,32 +79,8 @@ select{
     resize: vertical;
     
 }
-/*
-.Calculadora input[type=win]{
-    width: 25%;
-    height: 50px;
-    text-align: center;
-    cursor: pointer;
-    border: 0;
-    background: #35d443;
-    color: white;
-    font-size: 18px;
-    border-radius: 10px;
-}
 
-.Calculadora input[type=loss]{
-    width: 25%;
-    height: 50px;
-    text-align: center;
-    cursor: pointer;
-    border: 0;
-    background: #ff2c25;
-    color: white;
-    font-size: 18px;
-    border-radius: 10px;
-}
 
-*/
 
 .items input[type="button"] {
 
@@ -112,11 +92,22 @@ select{
     font-size: 18px;
 }
 
-.items input[type="errado"]{
+.items input[value="Errado"]{
     width: 100px;
     background-color: #ff2c25;
     color: white;
     padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.back a{
+    
+    
+    color: white;
+    padding: 5px;
     border-radius: 10px;
     text-decoration: none;
     font-size: 18px;
