@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
-    <script src="c.js"></script>
+
 </head>
+
 <body>
-    
+
 
 
     <section class="Calculadora">
@@ -18,30 +20,62 @@
         <div style="max-width: 900px;" class="center">
             <form method="post">
                 <input id="bancaInicial" type="Banca" placeholder="Banca Inicial...">
-                <input type="taxa" placeholder="Taxa...">
+                <h2>Selecione Seu Modo...</h2>
+                <select id="">
+                    <option value="">Conservador</option>
+                    <option value="">Moderado</option>
+                    <option value="">Agressivo</option>
+                </select>
                 <input type="entrada" placeholder="Proxima Entrada...">
-               
+
                 <!--
                     <input type="win" name="acao" value="WIN!"> 
                     <input type="loss" name="acao" value="LOSS!">
                 -->
                 <div class="items">
-                    <button class="win"> Certo!</button>
-                    <button class="loss"> Errado!</button>
-                </div> <!--items--> 
-               
-            </form> <!--post-->
-        </div> <!--center-->
+                    <input type="button" value="Certo" id="certo">
+                    <input type="button" value="Errado" id="errado">
+                </div>
+                <!--items-->
+
+            </form>
+            <!--post-->
+        </div>
+        <!--center-->
         <div class="resultado">
             <h2>Resultado</h2>
             <textarea placeholder="Resultado.."></textarea>
-         </div>
-    </section> <!--contato-->
+        </div>
+    </section>
+    <!--contato-->
 
-    
+
 
     <footer>
-        <p>Criado Por <a href="https://github.com/CesarNZT" target="_blank">Ítalo César</a> E <a href="https://github.com/LimaDev-Max" target="_blank">Fabio Lima</a></p>
+        <p>Criado Por <a href="https://github.com/CesarNZT" target="_blank">Ítalo César</a> E <a
+                href="https://github.com/LimaDev-Max" target="_blank">Fabio Lima</a></p>
     </footer>
+    <script>
+        let acertou = document.getElementById('certo')
+        acertou.addEventListener('click', updateButton)
+
+        function updateButton() {
+            if (acertou.value === 'Certo') {
+                window.alert('Acertou')
+            }
+
+        }
+        let errou = document.getElementById('errado')
+        errou.addEventListener('click', updateButton)
+
+        function updateButton() {
+            if(errou.value === 'Errado'){
+                window.alert('Errado')
+            }
+        }
+
+
+    </script>
 </body>
+
 </html>
