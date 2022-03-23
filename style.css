@@ -26,7 +26,7 @@ section {
 section.Calculadora{
     padding: 7% 2%;
     
-    background-color: rgb(30, 30, 30);
+background-color: rgb(30,30,30);
 }
 
 section.Calculadora h1{
@@ -38,7 +38,7 @@ section.Calculadora h1{
 section.Calculadora h2{
     text-align: center;
     color: white;
-    padding: 35px 2%;
+    padding: 15px;
 }
 
 section.Calculadora form{
@@ -46,7 +46,6 @@ section.Calculadora form{
 }
 
 .Calculadora input[type=banca],
-.Calculadora input[type=taxa],
 .Calculadora input[type=entrada]{
     
     width: 50%;
@@ -58,6 +57,17 @@ section.Calculadora form{
     font-size: 18px;
     padding-left: 10px;
 
+}
+
+select{
+    width: 50%;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: #FCFDFF ;
+    border: 1px solid #C3CCE8;
+    font-size: 18px;
+    padding-left: 10px;
 }
 
 .Calculadora textarea{
@@ -99,8 +109,8 @@ section.Calculadora form{
 
 */
 
-.items button.win{
-    cursor: pointer;
+.items input[type="button"] {
+
     background-color: #35d443;
     color: white;
     padding: 15px;
@@ -109,8 +119,8 @@ section.Calculadora form{
     font-size: 18px;
 }
 
-.items button.loss{
-    
+.items input[type="errado"]{
+    width: 100px;
     background-color: #ff2c25;
     color: white;
     padding: 15px;
