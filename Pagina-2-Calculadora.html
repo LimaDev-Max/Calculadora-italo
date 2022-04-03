@@ -16,11 +16,13 @@
 
 
     <section class="Calculadora">
-        <h1>C</h1>
+        <h1>c</h1>
+        
         <div style="max-width: 1278px;" class="center">
             <form method="post">
                 <h2>Selecione O Modo De Operação</h2>
                 <select id="">
+                    <label for="">Selecione Operação</label>
                     <option value="">Conservador</option>
                     <option value="">Moderado</option>
                     <option value="">Agressivo</option>
@@ -44,31 +46,7 @@
 
    
 
-    <footer>
-        <p>Criado Por <a href="https://github.com/CesarNZT" target="_blank">Ítalo César</a> E <a
-                href="https://github.com/LimaDev-Max" target="_blank">Fabio Lima</a></p>
-    </footer>
-    <script>
-        let acertou = document.getElementById('certo')
-        acertou.addEventListener('click', updateButton)
-
-        function updateButton() {
-            if (acertou.value === 'Certo') {
-                window.alert('Acertou')
-            }
-
-        }
-        let errou = document.getElementById('errado')
-        errou.addEventListener('click', updateButton)
-
-        function updateButton() {
-            if(errou.value === 'Errado'){
-                window.alert('Errado')
-            }
-        }
-
-
-    </script>
+   
 </body>
 
 </html>
