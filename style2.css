@@ -7,21 +7,28 @@
 .center{
     display: flex;
     max-width: 1278px;
-    padding: 0 2%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    text-align: center;
+   
+   
+    
+   
 }
 
 section {
- background-image: url(img/Vermelho\ e\ Preto\ Escuro\ Gamer\ Esportes\ Arte\ para\ canal\ do\ YouTube.png);
+ 
  background-repeat: no-repeat;
  background-size: cover;
 }
 
 section.Calculadora{
-    padding: 7% 2%;
+   
     
+
+}
+
+.cor{
+    background-color: red;
+    width: 10;
+    height: 100;
 
 }
 
